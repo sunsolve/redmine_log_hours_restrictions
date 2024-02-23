@@ -1,0 +1,30 @@
+<p>
+  <%= label_tag 'do_not_track_past_hours' %>
+  <%= check_box_tag 'settings[do_not_track_past_hours]', true, @settings[:do_not_track_past_hours] %>
+</p>
+
+<p>
+  <%= label_tag 'do_not_track_hours_for_the_past_week' %>
+  <%= check_box_tag 'settings[do_not_track_hours_for_the_past_week]', true, @settings[:do_not_track_hours_for_the_past_week] %>
+</p>
+
+<p>
+  <%= label_tag 'do_not_track_hours_for_the_past_month' %>
+  <%= check_box_tag 'settings[do_not_track_hours_for_the_past_month]', true, @settings[:do_not_track_hours_for_the_past_month] %>
+</p>
+
+<p>
+  <%= label_tag 'do_not_track_on_saturday' %>
+  <%= check_box_tag 'settings[do_not_track_on_saturday]', true, @settings[:do_not_track_on_saturday] %>
+</p>
+
+<p>
+  <%= label_tag 'do_not_track_on_sunday' %>
+  <%= check_box_tag 'settings[do_not_track_on_sunday]', true, @settings[:do_not_track_on_sunday] %>
+</p>
+
+
+<p>
+  <%= label_tag 'do_not_track_in_future' %>
+  <%= check_box_tag 'settings[do_not_track_in_future]', true, @settings[:do_not_track_in_future] %>
+</p>

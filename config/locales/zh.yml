@@ -1,0 +1,9 @@
+# Chinese strings go here for Rails i18n
+zh:
+  time_entry_restiction_day: "不能登记过去的工时"
+  time_entry_restiction_week: "不能登记上周或者更早的工时"
+  time_entry_restiction_mounth: "不能登记上个月或者更早的工时"
+  time_entry_restiction_day_per_day: "不能登记每天超过 %{num} 小时的工时"
+  time_entry_restiction_future_day: "不能登记未来的工时"
+  time_entry_restiction_satuday: "不能登记周六的工时"
+  time_entry_restiction_sunday: "不能登记周日的工时"
