@@ -20,6 +20,9 @@ Redmine::Plugin.register :redmine_log_hours_restrictions do
 end
 
 Rails.configuration.to_prepare do
+  Rails.logger.info "-------zzzzzzzzz--------------Preparing to patch TimeEntry"
+  require_dependency 'time_entry'
   TimeEntry.send :include, TimeEntryLogHoursRestrictions::TimeEntryPatch
+  Rails.logger.info "-----zzzzzzzzzzzzz---------------Patched TimeEntry"
 end
 

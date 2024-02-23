@@ -2,6 +2,8 @@ require 'redmine'
 require 'date'
 require 'active_support'
 
+Rails.logger.info "---------zzzzzzzzzzzzz-----------------Loading TimeEntryPatch"
+
 module TimeEntryLogHoursRestrictions
   module TimeEntryPatch
    extend ActiveSupport::Concern
@@ -55,3 +57,6 @@ module TimeEntryLogHoursRestrictions
    end
  end
 end
+
+Rails.logger.info "--------------zzzzzzzzzzzzzzz----------------------- Loaded TimeEntryPatch"
+
