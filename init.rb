@@ -1,7 +1,5 @@
 require 'redmine'
 
-$LOAD_PATH.unshift "#{File.dirname(__FILE__)}/lib"
-require 'time_entry_restrictions_patch'
 
 Redmine::Plugin.register :redmine_log_hours_restrictions do
   name 'Redmine Log Hours Restrictions plugin'
@@ -22,6 +20,6 @@ Redmine::Plugin.register :redmine_log_hours_restrictions do
 end
 
 Rails.configuration.to_prepare do
-  TimeEntry.prepend(TimeEntryRestrictionsPatch)
+  TimeEntry.send :include, TimeEntryLogHoursRestrictions::TimeEntryPatch
 end
 
